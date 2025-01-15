@@ -11,14 +11,16 @@ export default class App {
   processData(data) {
     const weather = data.currentConditions;
 
-    const weatherInfo = {
+    const info = {
+      address: data.resolvedAddress,
       conditions: weather.conditions,
       feelslike: weather.feelslike,
       humidity: weather.humidity,
+      icon: weather.icon,
       temp: weather.temp,
       windspeed: weather.windspeed,
     };
-    console.log(weatherInfo);
-    return weatherInfo;
+    console.log(info);
+    return info;
   }
 }
