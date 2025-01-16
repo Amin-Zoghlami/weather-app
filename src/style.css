@@ -1,0 +1,47 @@
+body {
+  background-color: #224772;
+  font-family: "Rubik", serif;
+}
+
+svg {
+  width: 25px;
+  height: 25px;
+  fill: white;
+}
+
+header,
+.main,
+form,
+.weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  color: white;
+  gap: 50px;
+}
+
+button {
+  background-color: #224772;
+  border: 0;
+}
+
+input {
+  height: 20px;
+  padding: 5px;
+  border: 0;
+  border-radius: 5px;
+  font-family: "Rubik", serif;
+  font-size: 15px;
+}
+
+.weather {
+  background-color: #82c8e5;
+  min-width: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+}
