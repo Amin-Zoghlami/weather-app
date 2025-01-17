@@ -4,7 +4,7 @@ export default class App {
       `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?key=WVMGYWTFRBUX6WZXAMZENSBDT`
     );
     const data = await response.json();
-    console.log(data);
+
     return data;
   }
 
@@ -20,7 +20,7 @@ export default class App {
       temp: weather.temp,
       windspeed: weather.windspeed,
     };
-    console.log(info);
+
     return info;
   }
 }
